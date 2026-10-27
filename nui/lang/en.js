@@ -1,0 +1,33 @@
+if (Lang == undefined) {
+    var Lang = [];
+}
+Lang["en"] = {
+    title: "Thrusters",
+    air: "Air reserve",
+    boost: "Boost",
+    ready: "Ready",
+    cooling: "Cooling",
+    climb: "Lift reserve",
+    altitude: "Altitude",
+    stability: "Stability control",
+    stability_desc: "Maintains balance and heading during flight",
+    landing: "Landing assist",
+    landing_desc: "Controls descent for a smooth touchdown",
+    stunts: "Stunt control",
+    stunts_desc: "Enables manual roll and pitch control during flight",
+    fan: "Underbody fan",
+    fan_desc: "Sucks the car to the road, to hold banked and upside-down track",
+    chip_stability: "Stability",
+    chip_landing: "Landing",
+    chip_fan: "Fan",
+    controls: "Controls",
+    lift: "Lift",
+    roll: "Roll",
+    pitch: "Pitch",
+    panel: "Panel",
+    hint: "Control panel",
+    readout: "Driving readout",
+    readout_desc: "Displays live thruster status. Toggle with {0}",
+    position: "Readout position",
+    position_desc: "Choose a screen corner for the driving readout",
+};

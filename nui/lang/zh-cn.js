@@ -1,0 +1,33 @@
+if (Lang == undefined) {
+    var Lang = [];
+}
+Lang["zh-cn"] = {
+    title: "推进器",
+    air: "气体储备",
+    boost: "加速",
+    ready: "就绪",
+    cooling: "冷却中",
+    climb: "升力储备",
+    altitude: "高度",
+    stability: "稳定控制",
+    stability_desc: "在飞行中保持平衡和方向",
+    landing: "着陆辅助",
+    landing_desc: "控制下降，实现平稳着陆",
+    stunts: "特技控制",
+    stunts_desc: "在飞行中手动控制横滚和俯仰",
+    fan: "底盘风扇",
+    fan_desc: "将车辆吸附在路面上，可在倾斜和倒置的赛道上行驶",
+    chip_stability: "稳定",
+    chip_landing: "着陆",
+    chip_fan: "风扇",
+    controls: "操作",
+    lift: "升力",
+    roll: "横滚",
+    pitch: "俯仰",
+    panel: "面板",
+    hint: "控制面板",
+    readout: "驾驶信息",
+    readout_desc: "实时显示推进器状态。按 {0} 切换",
+    position: "信息位置",
+    position_desc: "选择驾驶信息显示的屏幕角落",
+};

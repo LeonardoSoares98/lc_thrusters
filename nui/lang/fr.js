@@ -1,0 +1,33 @@
+if (Lang == undefined) {
+    var Lang = [];
+}
+Lang["fr"] = {
+    title: "Propulseurs",
+    air: "Réserve d'air",
+    boost: "Boost",
+    ready: "Prêt",
+    cooling: "Refroidissement",
+    climb: "Réserve de montée",
+    altitude: "Altitude",
+    stability: "Contrôle de stabilité",
+    stability_desc: "Maintient l'équilibre et le cap pendant le vol",
+    landing: "Aide à l'atterrissage",
+    landing_desc: "Contrôle la descente pour un atterrissage en douceur",
+    stunts: "Contrôle des figures",
+    stunts_desc: "Permet de contrôler le roulis et le tangage pendant le vol",
+    fan: "Ventilateur de soubassement",
+    fan_desc: "Plaque la voiture sur la route, pour les virages relevés et les pistes à l'envers",
+    chip_stability: "Stabilité",
+    chip_landing: "Atterrissage",
+    chip_fan: "Ventilateur",
+    controls: "Commandes",
+    lift: "Montée",
+    roll: "Roulis",
+    pitch: "Tangage",
+    panel: "Panneau",
+    hint: "Panneau de contrôle",
+    readout: "Indicateur de conduite",
+    readout_desc: "Affiche l'état des propulseurs en direct. Basculer avec {0}",
+    position: "Position de l'indicateur",
+    position_desc: "Choisis un coin de l'écran pour l'indicateur de conduite",
+};

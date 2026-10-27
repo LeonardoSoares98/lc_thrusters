@@ -1,0 +1,33 @@
+if (Lang == undefined) {
+    var Lang = [];
+}
+Lang["tr"] = {
+    title: "İticiler",
+    air: "Hava rezervi",
+    boost: "Güçlendirme",
+    ready: "Hazır",
+    cooling: "Soğuyor",
+    climb: "Yükselme rezervi",
+    altitude: "İrtifa",
+    stability: "Denge kontrolü",
+    stability_desc: "Uçuş sırasında dengeyi ve yönü korur",
+    landing: "İniş yardımı",
+    landing_desc: "Yumuşak bir iniş için alçalmayı kontrol eder",
+    stunts: "Akrobasi kontrolü",
+    stunts_desc: "Uçuş sırasında yuvarlanma ve yunuslamayı elle kontrol etmeyi sağlar",
+    fan: "Alt gövde fanı",
+    fan_desc: "Aracı yola yapıştırır, eğimli ve ters pistlerde tutunmasını sağlar",
+    chip_stability: "Denge",
+    chip_landing: "İniş",
+    chip_fan: "Fan",
+    controls: "Kontroller",
+    lift: "Yükselme",
+    roll: "Yuvarlanma",
+    pitch: "Yunuslama",
+    panel: "Panel",
+    hint: "Kontrol paneli",
+    readout: "Sürüş göstergesi",
+    readout_desc: "İticilerin durumunu canlı gösterir. {0} ile aç/kapat",
+    position: "Gösterge konumu",
+    position_desc: "Sürüş göstergesi için bir ekran köşesi seç",
+};

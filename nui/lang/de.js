@@ -1,0 +1,33 @@
+if (Lang == undefined) {
+    var Lang = [];
+}
+Lang["de"] = {
+    title: "Schubdüsen",
+    air: "Luftreserve",
+    boost: "Boost",
+    ready: "Bereit",
+    cooling: "Kühlt ab",
+    climb: "Auftriebsreserve",
+    altitude: "Höhe",
+    stability: "Stabilitätskontrolle",
+    stability_desc: "Hält Balance und Richtung während des Flugs",
+    landing: "Landehilfe",
+    landing_desc: "Steuert den Sinkflug für eine sanfte Landung",
+    stunts: "Stunt-Steuerung",
+    stunts_desc: "Ermöglicht manuelles Rollen und Nicken während des Flugs",
+    fan: "Unterbodenlüfter",
+    fan_desc: "Saugt das Auto an die Straße, für Steilkurven und Überkopf-Strecken",
+    chip_stability: "Stabilität",
+    chip_landing: "Landung",
+    chip_fan: "Lüfter",
+    controls: "Steuerung",
+    lift: "Auftrieb",
+    roll: "Rollen",
+    pitch: "Nicken",
+    panel: "Bedienfeld",
+    hint: "Bedienfeld",
+    readout: "Fahranzeige",
+    readout_desc: "Zeigt den Status der Schubdüsen live. Umschalten mit {0}",
+    position: "Position der Anzeige",
+    position_desc: "Wähle eine Bildschirmecke für die Fahranzeige",
+};

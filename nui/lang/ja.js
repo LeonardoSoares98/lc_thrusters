@@ -1,0 +1,33 @@
+if (Lang == undefined) {
+    var Lang = [];
+}
+Lang["ja"] = {
+    title: "スラスター",
+    air: "エア残量",
+    boost: "ブースト",
+    ready: "準備完了",
+    cooling: "冷却中",
+    climb: "上昇残量",
+    altitude: "高度",
+    stability: "スタビリティコントロール",
+    stability_desc: "飛行中のバランスと進行方向を保ちます",
+    landing: "着地アシスト",
+    landing_desc: "降下を制御してスムーズに着地します",
+    stunts: "スタントコントロール",
+    stunts_desc: "飛行中にロールとピッチを手動で操作できます",
+    fan: "アンダーボディファン",
+    fan_desc: "車を路面に吸い付け、バンクや逆さのコースを走れるようにします",
+    chip_stability: "安定",
+    chip_landing: "着地",
+    chip_fan: "ファン",
+    controls: "操作",
+    lift: "上昇",
+    roll: "ロール",
+    pitch: "ピッチ",
+    panel: "パネル",
+    hint: "コントロールパネル",
+    readout: "走行表示",
+    readout_desc: "スラスターの状態をリアルタイムで表示します。{0} で切り替え",
+    position: "表示位置",
+    position_desc: "走行表示を出す画面の角を選びます",
+};

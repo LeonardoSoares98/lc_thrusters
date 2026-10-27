@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- Montserrat from Google Fonts. Without internet the system font is used -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap">
+
+	<!-- jQuery (needed by lc_utils) -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Utils JavaScript -->
+	<script src="https://cfx-nui-lc_utils/nui/index.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- Readout while driving -->
+	<div id="hud" class="hidden">
+		<div class="car" id="hud-car" aria-hidden="true">
+			<img class="car-image" src="images/car-top.png" alt="" draggable="false">
+			<svg class="car-effects" viewBox="-70 -100 140 200"></svg>
+		</div>
+		<div class="hud-info">
+			<div class="row">
+				<span class="label" data-label="air"></span>
+				<span class="big"><span id="hud-tank">0</span><small>%</small></span>
+			</div>
+			<div class="bar" id="hud-tank-bar"><div class="bar-reserve"></div><div class="bar-fill"></div></div>
+
+			<div id="hud-boost" class="group">
+				<div class="row"><span class="label" data-label="boost"></span><span class="state" id="hud-boost-state"></span></div>
+				<div class="bar thin"><div class="bar-fill"></div></div>
+			</div>
+
+			<div id="hud-climb" class="group collapsed">
+				<div class="row"><span class="label" data-label="climb"></span><span class="state" id="hud-climb-state"></span></div>
+				<div class="bar thin"><div class="bar-fill"></div></div>
+			</div>
+
+			<div id="hud-flight" class="flight collapsed">
+				<span class="label" data-label="altitude"></span>
+				<span class="flight-value"><span id="hud-altitude">0</span><small>m</small></span>
+				<span class="flight-vs" id="hud-vs"></span>
+			</div>
+
+			<div class="chips" id="hud-chips"></div>
+			<div class="hint" id="hud-hint"></div>
+		</div>
+	</div>
+
+	<!-- Control panel -->
+	<div id="panel-backdrop" class="hidden">
+		<div id="panel">
+			<header>
+				<div>
+					<h1 data-label="title"></h1>
+					<p id="panel-vehicle"></p>
+				</div>
+				<button id="panel-close" type="button">
+					<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+				</button>
+			</header>
+
+			<section class="overview">
+				<div class="gauge">
+					<svg viewBox="0 0 120 120">
+						<circle class="gauge-track" cx="60" cy="60" r="52"/>
+						<circle class="gauge-fill" id="panel-gauge-fill" cx="60" cy="60" r="52"/>
+						<line class="gauge-tick" id="panel-gauge-tick"/>
+					</svg>
+					<div class="gauge-text">
+						<span class="big"><span id="panel-tank">0</span><small>%</small></span>
+						<span class="label" data-label="air"></span>
+					</div>
+				</div>
+				<div class="car" id="panel-car" aria-hidden="true">
+					<img class="car-image" src="images/car-top.png" alt="" draggable="false">
+					<svg class="car-effects" viewBox="-70 -100 140 200"></svg>
+				</div>
+				<div class="stats">
+					<div class="stat" id="panel-boost-stat"><span class="label" data-label="boost"></span><span class="stat-value" id="panel-boost"></span></div>
+					<div class="stat" id="panel-climb-stat"><span class="label" data-label="climb"></span><span class="stat-value" id="panel-climb"></span></div>
+				</div>
+			</section>
+
+			<section class="settings" id="panel-settings"></section>
+
+			<footer>
+				<span class="label" data-label="controls"></span>
+				<div class="controls" id="panel-controls"></div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="panel.js" type="text/javascript"></script>
+</body>
+</html>
